@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Forklab</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Overview</a>
+                <a class="nav-item nav-link active" href="#">Security Token Trading</a>
+                <a class="nav-item nav-link" href="#">Manage Token</a>
+            </div>
+            <span class="navbar-text">
+                <a class="nav-link" href="#"><span class="fa fa-sign-in"></span> Login</a>
+            </span>
+        </div>
+    </nav>
+
+    <div class="container container-main">
+        <div class="row">
+            <div class="col">
+                <h4><strong>Exchange</strong></h4>
+                <p>Trade Security Token (SEC)</p>
+            </div>
+            <div class="col text-right">
+                <h6><strong>Balance</strong></h6>
+                <p class="zero-margin">0.5 ETH</p>
+                <p class="zero-margin">20000 SEC</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-main">
+        <div class="row">
+            <div class="col">
+                <p><strong>New order</strong></p>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-5">
+                <div class="row bg-dark">
+                    <div class="col">
+                        <p class="text-light">Buy Token</p>
+                    </div>
+                </div>
+                <div class="row bg-grey">
+                    <div class="col">
+                        <form>
+                            <div class="form-group">
+                                <label for="buyName">Symbol Name</label>
+                                <input type="text" class="form-control" name="Name" id="buyName">
+                            </div>
+                            <div class="form-group">
+                                <label for="buyAmount">Amount in Token</label>
+                                <input type="text" class="form-control" name="Amount" id="buyAmount">
+                            </div>
+                            <div class="form-group">
+                                <label for="buyWei">Price in wei</label>
+                                <input type="text" class="form-control" name="Wei" id="buyWei">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-dark">Buy</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="row bg-dark">
+                    <div class="col">
+                        <p class="text-light">Sell Token</p>
+                    </div>
+                </div>
+                <div class="row bg-grey">
+                    <div class="col">
+                        <form>
+                            <div class="form-group">
+                                <label for="sellName">Symbol Name</label>
+                                <input type="text" class="form-control" name="Name" id="sellName">
+                            </div>
+                            <div class="form-group">
+                                <label for="sellAmount">Amount in Token</label>
+                                <input type="text" class="form-control" name="Amount" id="sellAmount">
+                            </div>
+                            <div class="form-group">
+                                <label for="sellWei">Price in wei</label>
+                                <input type="text" class="form-control" name="Wei" id="sellWei">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-dark">Sell</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-main" id="orderBook">
+        <div class="row justify-content-between">
+            <div class="col-5">
+                <div class="row bg-dark">
+                    <div class="col">
+                        <p class="text-light">Bid</p>
+                    </div>
+                </div>
+                <div class="row bg-grey">
+                    <div class="col">
+                        <p>No Buy Orders at the moment...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="row bg-dark">
+                    <div class="col">
+                        <p class="text-light">Ask</p>
+                    </div>
+                </div>
+                <div class="row bg-grey">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li>sell50@500000</li>
+                            <li>sell100@7000000</li>
+                            <li>sell3000@9045040</li>
+                            <li>sell1000@250000000</li>
+                            <li>sell200@3000000000</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

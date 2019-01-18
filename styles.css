@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 70px;
+}
+
+.container {
+    max-width: 768px;
+}
+
+.btn {
+    min-width: 100px;
+}
+
+.zero-margin {
+    margin: 0;
+}
+
+.zero-padding {
+    padding: 0;
+}
+
+.container-main {
+    margin: 10px auto auto;
+}
+
+.col {
+    margin-top: 15px;
+}
+
+.nav-item {
+    margin-right: 25px;
+}
+
+.bg-grey {
+    background-color: #dddddd;
+}
+
+.list-group {
+    list-style-type: none;
+    margin: -5px auto 5px auto;
+}
+
+#orderBook {
+    margin-top: 60px;
+}
